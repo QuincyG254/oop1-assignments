@@ -1,0 +1,40 @@
+#include <stdio.h>
+#define PI 3.142
+
+int main() {
+    float r, h, volume, surface_area;
+
+    printf("Enter radius: ");
+    scanf("%f", &r);
+
+    printf("Enter height: ");
+    scanf("%f", &h);
+
+    volume = PI * r * r * h;
+    surface_area = 2 * PI * r * (r + h);
+
+    printf("Volume: %.2f\n", volume);
+    printf("Surface Area: %.2f\n", surface_area);
+
+    return 0;
+}
+#include <stdio.h>
+
+int main() {
+    int age;
+    float income;
+
+    printf("Enter your age: ");
+    scanf("%d", &age);
+
+    printf("Enter your annual income: ");
+    scanf("%f", &income);
+
+    if (age >= 21 && income >= 21000) {
+        printf("Congratulations you qualify for a loan.\n");
+    } else {
+        printf("Unfortunately, we are unable to offer you a loan at this time.\n");
+    }
+
+    return 0;
+}
