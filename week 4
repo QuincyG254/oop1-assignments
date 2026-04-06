@@ -1,0 +1,65 @@
+#include <stdio.h>
+
+int main() {
+    for(int i = 100; i >= 50; i--) {
+        printf("%d\n", i);
+    }
+    return 0;
+}
+#include <stdio.h>
+
+int main() {
+    float balance = 1000, withdraw;
+
+    while (balance > 0) {
+        printf("Enter withdrawal amount: ");
+        scanf("%f", &withdraw);
+
+        balance -= withdraw;
+        printf("Remaining balance: %.2f\n", balance);
+    }
+
+    return 0;
+}
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main() {
+    int num, guess, attempts = 0;
+
+    srand(time(0));
+    num = rand() % 20 + 1;
+
+    do {
+        printf("Enter guess (1-20): ");
+        scanf("%d", &guess);
+        attempts++;
+
+        if (guess > num)
+            printf("Too high!\n");
+        else if (guess < num)
+            printf("Too low!\n");
+        else
+            printf("Congratulations!\n");
+
+    } while (guess != num);
+
+    printf("Attempts: %d\n", attempts);
+
+    return 0;
+}
+#include <stdio.h>
+
+int main() {
+    int password;
+
+    do {
+        printf("Enter password: ");
+        scanf("%d", &password);
+    } while (password != 1234);
+
+    printf("Access Granted\n");
+
+    return 0;
+}
