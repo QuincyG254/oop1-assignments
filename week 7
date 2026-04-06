@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    FILE *fp;
+    char title[100];
+
+    fp = fopen("borrowed_books.txt", "a");
+
+    printf("Enter book title: ");
+    scanf(" %[^\n]", title);
+
+    fprintf(fp, "%s\n", title);
+    fclose(fp);
+
+    printf("Book saved successfully.\n");
+
+    return 0;
+}
