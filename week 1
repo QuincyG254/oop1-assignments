@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+int main() {
+    printf("Units Offered This Semester:\n");
+    printf("1. Introduction to Programming\n");
+    printf("2. Data Structures\n");
+    printf("3. Computer Networks\n");
+    printf("4. Database Systems\n");
+    printf("5. Software Engineering\n");
+
+    return 0;
+}
+#include <stdio.h>
+
+int main() {
+    float height;
+    double balance;
+    char phone[20];
+
+    printf("Enter your height (in meters): ");
+    scanf("%f", &height);
+
+    printf("Enter your bank balance (KES): ");
+    scanf("%lf", &balance);
+
+    printf("Enter your phone number: ");
+    scanf("%s", phone);
+
+    printf("\n--- User Details ---\n");
+    printf("Height: %.2f m\n", height);
+    printf("Bank Balance: %.2lf KES\n", balance);
+    printf("Phone Number: %s\n", phone);
+
+    return 0;
+}
